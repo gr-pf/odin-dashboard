@@ -1,5 +1,7 @@
 :root {
   --primary-color: rgb(255 255 255);
+  --primary-color-var1: rgb(255 255 250);
+
   --secondary-color: rgb(226 232 240);
   --contrast-color: rgb(0 0 0);
   --accent-color: rgb(25 146 212);
@@ -71,7 +73,7 @@ h3 {
 .nav-header,
 .nav-row {
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 .svg-h1 {
@@ -80,6 +82,7 @@ h3 {
 
 .svg-nav-item {
   width: calc(var(--font-size-h2));
+  margin-right: 4px;
 }
 
 .svg-h1,
@@ -101,4 +104,15 @@ h3 {
   padding-left: 2rem;
   justify-self: start;
   align-self: center;
+}
+
+.nav-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item a:active {
+  opacity: 0.3;
+  color: var(--contrast-color);
 }
