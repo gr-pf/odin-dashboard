@@ -37,6 +37,10 @@ h3 {
   font-size: var(--font-size-h3);
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   display: grid;
   grid-template-areas: "nav header" "nav main";
@@ -64,6 +68,10 @@ h3 {
 
 .header-wrapper {
   grid-area: header;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  gap: 1.5rem;
+  background-color: var(--primary-color);
 }
 
 .main-wrapper {
@@ -108,7 +116,6 @@ h3 {
 
 .nav-item a {
   color: var(--primary-color);
-  text-decoration: none;
   font-weight: bold;
 }
 
