@@ -4,6 +4,7 @@
 
   --secondary-color: rgb(226 232 240);
   --secondary-color-var1: rgb(139, 139, 139);
+  --secondary-color-var2: rgb(68, 68, 68);
   --contrast-color: rgb(0 0 0);
   --accent-color: rgb(25 146 212);
   --accent-color-var1: rgb(10 131 197);
@@ -223,6 +224,26 @@ a {
 
 .card-container {
   grid-area: project;
+}
+
+.projects-title {
+  padding-bottom: 1rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card-item {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.card-text {
+  color: var(--secondary-color-var1);
 }
 
 .announcements-container {
