@@ -6,10 +6,15 @@
   --secondary-color-var1: rgb(139, 139, 139);
   --contrast-color: rgb(0 0 0);
   --accent-color: rgb(25 146 212);
+  --accent-color-var1: rgb(10 131 197);
 
   --font-size-h1: 2rem;
   --font-size-h2: 1.5rem;
   --font-size-h3: 1.17rem;
+
+  font-family:
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, system-ui;
 }
 
 *,
@@ -117,7 +122,7 @@ a {
 
 .nav-item a {
   color: var(--primary-color);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .nav-item a:active {
@@ -178,6 +183,51 @@ a {
   font-size: var(--font-size-h2);
 }
 
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-btn-link {
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 3rem;
+  list-style: none;
+  color: var(--primary-color);
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.header-btn-link:active {
+  background-color: var(--accent-color-var1);
+  color: var(--secondary-color-var1);
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-areas: "project announcement" "project trending";
+
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.card-container {
+  grid-area: project;
+}
+
+.announcements-container {
+  grid-area: announcement;
+}
 /**/
 .main-wrapper {
   background-color: var(--secondary-color);
