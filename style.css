@@ -14,6 +14,7 @@
   --font-size-h1: 2rem;
   --font-size-h2: 1.5rem;
   --font-size-h3: 1.17rem;
+  --font-size-h4: 1rem;
 
   font-family:
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -44,6 +45,11 @@ h2 {
 
 h3 {
   font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: 900;
 }
 
 a {
@@ -281,6 +287,47 @@ a {
 .announcements-container {
   grid-area: announcement;
 }
+
+.announcements-title {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.announcements-list {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.announcements-item {
+  border-bottom: 1px var(--secondary-color-var1) solid;
+  padding: 1rem;
+}
+.announcements-item:last-child {
+  border-bottom: 0;
+  padding: 1rem;
+}
+
+.announcements-item-title {
+  padding-bottom: 0;
+}
+
+.announcements-text {
+  color: var(--secondary-color-var1);
+  padding-bottom: 0;
+  line-height: 1.2em;
+
+  overflow: hidden;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
 /**/
 .main-wrapper {
   background-color: var(--secondary-color);
