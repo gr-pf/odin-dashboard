@@ -70,7 +70,7 @@ a {
   grid-area: nav;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   color: var(--primary-color);
   background-color: var(--accent-color);
   padding-top: 0.5rem;
@@ -93,10 +93,16 @@ a {
   grid-area: main;
 }
 
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .nav-header,
 .nav-row {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 7fr;
 }
 
 .svg-h1 {
