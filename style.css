@@ -170,6 +170,16 @@ a {
   width: calc(var(--font-size-h2));
 }
 
+.a-svg-header {
+  text-decoration: none;
+  color: var(--contrast-color);
+}
+
+.a-svg-header:active {
+  text-decoration: none;
+  color: var(--secondary-color-var1);
+}
+
 .header-icons {
   display: flex;
   gap: 1.5rem;
