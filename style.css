@@ -9,6 +9,8 @@
   --accent-color: rgb(25 146 212);
   --accent-color-var1: rgb(10 131 197);
 
+  --border-color: rgb(240 180 41);
+
   --font-size-h1: 2rem;
   --font-size-h2: 1.5rem;
   --font-size-h3: 1.17rem;
@@ -240,10 +242,39 @@ a {
 .card-item {
   background-color: var(--primary-color);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: 40px 130px 40px;
+  border-left: 8px var(--border-color) solid;
+}
+
+.card-title {
+  align-self: end;
 }
 
 .card-text {
+  color: var(--secondary-color-var1);
+  line-height: 1.2em;
+}
+
+.card-list-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+
+.svg-project {
+  width: calc(var(--font-size-h2));
+}
+
+.card-icon a {
+  text-decoration: none;
+  color: var(--contrast-color);
+}
+
+.card-icon a:active {
+  text-decoration: none;
   color: var(--secondary-color-var1);
 }
 
