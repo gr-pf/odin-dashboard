@@ -305,10 +305,12 @@ a {
 .announcements-item {
   border-bottom: 1px var(--secondary-color-var1) solid;
   padding: 1rem;
+  padding-left: 0;
 }
 .announcements-item:last-child {
   border-bottom: 0;
   padding: 1rem;
+  padding-left: 0;
 }
 
 .announcements-item-title {
@@ -328,6 +330,41 @@ a {
   text-overflow: ellipsis;
 }
 
+.trending-container {
+  grid-area: trending;
+}
+
+.trending-title {
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.trending-list {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.trending-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.trending-img {
+  width: calc(var(--font-size-h2) * 2);
+  border-radius: 50%;
+}
+
+.trending-project {
+  color: var(--secondary-color-var1);
+  padding-bottom: 0;
+  line-height: 1em;
+}
 /**/
 .main-wrapper {
   background-color: var(--secondary-color);
